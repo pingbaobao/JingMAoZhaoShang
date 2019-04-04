@@ -1,0 +1,106 @@
+// 头部
+.head {
+    width: 7.5rem;
+    height: 1.2rem;
+    position: fixed;
+    z-index: 998;
+    background: transparent;
+    padding: 0 .3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logoimg{
+        width: 1.7rem;
+        height: .38rem;
+    }
+    .setting{
+        display: flex;
+        justify-content: space-around;
+        width: .6rem;
+        color: $white;
+        font-size: .45rem;
+        span{
+            width: 5px;
+            height: 5px;
+            background: $white;
+            border-radius: 50%;
+            display: block;
+            transition: .5s all;
+            opacity: 1;
+        }
+        &.active{
+            span{
+                width: .6rem;
+                height: 2px;
+                border-radius: 0;
+            }
+            span:nth-child(1){
+                transform: translate(100%,0) rotate(45deg) ;
+                
+            }
+            span:nth-child(2){
+                opacity: 0;
+            }
+            span:nth-child(3){
+               transform:translate(-100%,0) rotate(-45deg);
+            }
+        }
+    }
+}
+.navShadow{
+    position: fixed;
+    background: rgba($color: #000, $alpha: 0);
+    z-index: 999;
+    opacity: 0;
+    &.active{
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba($color: #000, $alpha: .6);
+        opacity: 1;
+        .rightNav{
+            transform: translate(2.5rem,0);
+        }
+    }
+    .rightNav{
+        width: 5rem;
+        height: 100%;
+        background: #121630;
+        position: absolute;
+        transition: all .5s;
+        transform: translate(7.5rem,0);
+        .icon-cuo{
+            font-size: .4rem;
+            color: #ddd;
+            text-align: right;
+            margin-right: .4rem;
+            margin-top: .3rem;
+        }
+        #nav-ul{
+            margin-top: .2rem;
+            margin-left: .6rem;
+            a{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                color: #999;
+                font-size: .3rem;
+                margin-bottom: .7rem;
+                .icon{
+                    width: .4rem;
+                    height: .4rem;
+                    background-size: 100%;
+                }
+                span{
+                    flex: 1;
+                    margin-left: .5rem;
+                }
+                &.current{
+                    color: #fff;
+                    font-size: .33rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,159 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, button, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+input, select, textarea,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+a {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+caption, th {
+  text-align: left;
+}
+fieldset, img {
+  border: 0;
+}
+legend {
+  color: #000;
+}
+ol, ul {
+  list-style: none;
+}
+sub {
+  vertical-align: text-bottom;
+}
+sup {
+  vertical-align: text-top;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+textarea {
+  resize: none;
+}
+button,input[type=button]{-webkit-appearance:none;-webkit-border-radius:0}
+* {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  color: #666;
+  position: relative;
+  min-height: 100%;
+  min-width: 320px;
+  background: #fff;
+  line-height: 1.4258;
+}
+
+html {
+  // font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: PingFang SC, Lantinghei SC, Helvetica Neue, Helvetica, Arial, Microsoft YaHei, \\5FAE\8F6F\96C5\9ED1, STHeitiSC-Light, simsun, \\5B8B\4F53, WenQuanYi Zen Hei, WenQuanYi Micro Hei, "sans-serif";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%!important;
+  -ms-text-size-adjust: 100%!important;
+  -webkit-text-size-adjust: 100%!important;
+  height: 100%;
+}
+
+html,body {
+  overflow-x: hidden;
+}
+
+html.pc body {
+  margin: 0 auto;
+  max-width: 750px;
+}
+
+html.pc {
+  background-color: #ccc;
+}
+
+html.phone body {
+  width: 100%;
+}
+
+html.phone {
+  background-color: #f8f8f8;
+}
+
+button {
+  -webkit-user-select: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+
+input[type=text],
+input[type=number],
+input[type=tel],
+input[type=password],
+button {
+  -webkit-appearance: none;
+}
+
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.layui-m-layerchild {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  background-color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+  pointer-events: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: .2s;
+  animation-duration: .2s
+}
+.layui-m-layercont {
+  padding: 20px;
+  line-height: 22px;
+  text-align: center
+}

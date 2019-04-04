@@ -1,0 +1,182 @@
+.footer{
+    color:#858585;
+    background:#202660;
+    width: 100%;
+    line-height: 1.8;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    .gopc{
+        color:#858585 !important;
+    }
+    .topfooter{
+        display: flex;
+        justify-content: space-between;
+        padding: .6rem .1rem .3rem .3rem;
+        .img{
+            width:2.11rem;
+            height: 1.88rem;
+            background: transparent;
+            img{
+              background: transparent;
+            }
+        }
+        .formdata{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .text{
+                color: $white;
+                font-size: .24rem;
+            }
+            .group{
+                background: $white;
+                width: 4.2rem;
+                height: .7rem;
+                line-height: .7rem;
+                border-radius: .35rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                overflow: hidden;
+                .input{
+                    flex: 1;
+                    text-indent: .3rem;
+                    font-size: .24rem;
+                    width: 1.9rem;
+                    height: .7rem;
+                    line-height: .7rem;
+                }
+                .submit{
+                    width: 1.3rem;
+                    height: .7rem;
+                    display: block;
+                    justify-content: center;
+                    align-items: center;
+                    background: $primary;
+                    color: $white;
+                    white-space: nowrap;
+                    cursor: pointer;
+                    -webkit-appearance: none;
+                    transition: .1s;
+                    outline: none;
+                    -moz-user-select: none;
+                    -webkit-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    font-size: .24rem;
+                    &:hover{
+                        background: darken($color: $primary,$amount: 10%)
+                    }
+                }
+            }
+        }
+    }
+    .bottomfooter{
+        display:flex;
+        justify-content: space-around;
+        background: #13184c;
+        border-top: 1px solid $white;
+        padding: 15px;
+        font-size: .24rem;
+        .title{
+            color: $white;
+            padding-bottom: 10px;
+        }
+        .app{
+            margin-top: 5px;
+        }
+        a:hover{
+            color: $white;
+        }
+        .btn{
+            background: #252959;
+            color: $white;
+            border: 1px solid #ccc;
+            border-radius: .1rem;
+            display: inline-block;
+            width: 1.4rem;
+            height: .55rem;
+            line-height: .55rem;
+            text-align: center;
+            &:hover{
+                background: $primary;
+                border-color: $primary;
+            }
+        }
+    }
+    .company{
+        height: 1.1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid #fff;
+        background: #13184c;
+        padding: .25rem 0;
+        font-size: .24rem;
+    }
+}
+.com_apply_bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba($color: #000000, $alpha: .3);
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.com_apply_close{
+    position: absolute;
+    top: -.5rem;
+    left: 0;
+    z-index: 10001;
+    display: none;
+    font-size: .4rem;
+    color: #ddd;
+}
+
+.com_apply_content{
+    display: none;
+    width:5.65rem;
+    height:5.8rem;
+    padding: .3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    z-index: 10000;
+    border-radius: .1rem;
+    h6{
+        text-align: center;
+        font-size: .32rem;
+        color: #000000;
+        line-height: .8rem;
+        margin-bottom: .1rem;
+    }
+    input{
+        width: 100%;
+        height: .8rem;
+        padding: .2rem;
+        line-height: .8rem;
+        background-color: #fafafa;
+        border: 1px solid #d2d2d2;
+        margin-bottom: .3rem;
+        border-radius: 5px;
+        font-size: .24rem;
+    }
+    button{
+        width: 100%;
+        height: .9rem;
+        line-height: .9rem;
+        color: #fff;
+        text-align: center;
+        background-color: #389bee;
+        font-size: .32rem;
+        border-radius: 10px;
+        outline: none;
+    }
+}
